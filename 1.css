@@ -1,6 +1,6 @@
 *{margin:0;padding:0; }
 body{
-    background-image: image("background.jpg");
+    background-image: url("image/background.jpg");
 }
 
  
