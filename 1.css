@@ -63,6 +63,7 @@ span{
 }
 
 .Clock h4 {
+    text-shadow: 0px 0px 30px #27f48c9c;
     margin: 0;
     line-height: normal;
     text-align: center;
