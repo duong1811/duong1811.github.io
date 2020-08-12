@@ -12,7 +12,7 @@
 </head>
 <body >
 	<div class="Time container">
-		<div class="row">
+		<div class="row" id="row">
 			<div class="dmy col-lg-9 col-sm-9 col-md-9 col-xs-10">
 				<h1 id="day" class="col-lg-1 col-sm-push-4">00</h1>
 				<h1 id="month" class="col-lg-1 col-sm-push-4">00</h1>
@@ -22,6 +22,12 @@
 			<div class="Minutes col-lg-3 col-sm-3 col-xs-4"><h3>Minutes</h3><h4 id="Minutes">00</h4></div>
 			<div class="seconds col-lg-3 col-sm-3 col-xs-4"><h3>Seconds</h3><h4 id="Seconds">00</h4></div>
 		</div>
+		<div class="col-xs-6 col-sm-push-3" id="hien">
+			<img src="" id="image" alt="" class="img-responsive">
+			<audio controls autobuffer loop style="display: none;" id="audio" >
+				<source src="" type="audio/mpeg" id="mp4">
+			</audio>
+		</div>
 	</div>
 	<script>
 		function createSquare(){
@@ -29,7 +35,7 @@
             '#2196f3',
             '#e91e63',
             '#ffeb3b',
-            '74ff1d',
+            '#74ff1d',
         ]
         const section = document.querySelector('body');
         const square = document.createElement('span');
@@ -52,7 +58,7 @@
 
         setTimeout(() =>{
             square.remove()
-        }, 6000)
+        }, 5000)
      }
       setInterval(createSquare, 150)
       // end background
@@ -63,7 +69,6 @@
         var day = document.getElementById('day');
         var month = document.getElementById('month');
         var year = document.getElementById('year');
-
 
         var h = new Date().getHours();
         var m = new Date().getMinutes();
@@ -77,10 +82,9 @@
         seconds.innerHTML = s;
         day.innerHTML = d;
         month.innerHTML = mo;
-        year.innerHTML = y;
+        year.innerHTML = y;  
     }
-        setInterval(clock, 1000)
-    // end time
+        setInterval(clock, 1000);
 	</script>
 </body>
 </html>

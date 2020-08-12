@@ -3,6 +3,10 @@
     padding:0;
     box-sizing: border-box;
 }
+/* '#2196f3',
+'#e91e63',
+'#ffeb3b',
+'#74ff1d', */
 body{
     width: -webkit-fill-available;
     overflow: hidden;
@@ -14,6 +18,7 @@ section{
     height: 100vh;
 }
 span{
+    background-image: url('image/anh.jpg');
     position: absolute;
     pointer-events: none;
     background: #fff;
@@ -49,7 +54,7 @@ span{
     width: -webkit-fill-available;
 }
 .Hours, .Minutes, .seconds {
-    height: 250px;
+    height: 255px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
 .Hours{
@@ -177,5 +182,38 @@ span{
     }
     .col-sm-push-4{
        left: 34.5%; 
+    }
+}
+/* end clock */
+div#hien {
+    display: none;
+    margin-top: 15%;
+    text-align: -webkit-center;
+}
+img{
+    margin-top: 10%;
+    margin-left: 25%;
+    pointer-events: none;
+    animation: aniName 5s linear infinite;
+}
+
+@keyframes aniName{
+    0%
+    {
+        transform: scale(0) translateY(0) rotate(0deg);
+        opacity: 0;
+    }
+    10%
+    {
+        opacity: 0.5;
+    }
+    90%
+    {
+       opacity: 1;
+    }
+    100%
+    {
+        transform: scale(1) translateY(-200%) rotate(0deg);
+        opacity: 1;
     }
 }

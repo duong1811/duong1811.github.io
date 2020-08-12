@@ -4,7 +4,7 @@
     //         '#2196f3',
     //         '#e91e63',
     //         '#ffeb3b',
-    //         '74ff1d',
+    //         '#74ff1d',
     //     ]
     //     const section = document.querySelector('body');
     //     const square = document.createElement('span');
@@ -27,7 +27,7 @@
 
     //     setTimeout(() =>{
     //         square.remove()
-    //     }, 6000)
+    //     }, 5000)
     //  }
     //   setInterval(createSquare, 150)
     //   // end background
@@ -38,7 +38,6 @@
     //     var day = document.getElementById('day');
     //     var month = document.getElementById('month');
     //     var year = document.getElementById('year');
-
 
     //     var h = new Date().getHours();
     //     var m = new Date().getMinutes();
@@ -52,10 +51,46 @@
     //     seconds.innerHTML = s;
     //     day.innerHTML = d;
     //     month.innerHTML = mo;
-    //     year.innerHTML = y;
+    //     year.innerHTML = y;  
     // }
-    //     setInterval(clock, 1000)
-    // // end time
-     
+    //     setInterval(clock, 1000);
+    // end time
+    // function anh(){
+    //     var h = new Date().getHours();
+    //     var m = new Date().getMinutes();
+    //     var e = document.getElementById('hien');
+    //     var f = document.getElementById('row');
+    //      if(h>=0 && m>=13){
+    //          e.style.display = "block";
+    //          f.style.display = "none";
+    //             const img = [
+    //                 'anh1.jpg',
+    //                 'anh2.jpg',
+    //                 'anh3.jpg',
+    //                 'anh4.jpg',
+    //             ]
+    //             var url = 'image/' + img[Math.floor(Math.random()*img.length)];
+    //             document.getElementById('image').src = url;
+    //             var x = document.getElementById('image');
+    //             x.style.lineHeight = innerHeight;
+    //         document.getElementById('mp4').src = "image/Sugar.mp3";
+    //             var y = document.getElementById('audio');
+    //             y.play();
+    //     }else{
+    //         e.style.display = "none";
+    //         f.style.display = "block";
+    //     }
+    // }
+    //     setInterval(anh, 3000);
+    // if (h>=0 && m>=13) {
+    //     document.getElementById('mp4').src = "image/Sugar.mp3";
+    //             var y = document.getElementById('audio');
+    //             y.play();
+    // } else {
+    //     document.getElementById('mp4').src = "image/Sugar.mp3";
+    //             var y = document.getElementById('audio');
+    //             y.pause();
+    // }
+        
 })  
 
