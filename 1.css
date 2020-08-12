@@ -6,11 +6,12 @@
 /* '#2196f3',
 '#e91e63',
 '#ffeb3b',
-'#74ff1d', */
+'#74ff1d', 
+-webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+*/
 body{
     width: -webkit-fill-available;
     overflow: hidden;
-    height: 100px;
     background: #000;
 }
 
@@ -47,145 +48,43 @@ span{
 }
 /* end background */
 .Time {
+    text-align: center;
     position: relative;
     z-index: 1000;
 }
+
 .container{
     width: -webkit-fill-available;
 }
-.Hours, .Minutes, .seconds {
-    height: 255px;
-    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
+.Clock, .dmy {
+    display: inline-block;
+    height: max-content;
+    width: max-content;
 }
-.Hours{
-    margin-left: 12.5%;
-}
-.dmy {
-    margin: 12.5% 12.5% 0 12.5%;
-    color: white;
-    padding: 0px;
-    float: left;
-    background: #ffdead00;
+
+.Clock h4 {
+    margin: 0;
+    line-height: normal;
     text-align: center;
+    float: left;
+    font-family: Digital-7 Regular;
+    font-size: 1000%;
+    color: #02ff7f;
 }
 
 .dmy h1 {
+    margin: 0;
+    color: white;
+    font-size: 50px;
     float: left;
 }
-
-.Time .seconds h4 {
-    margin: 0;
-    background: #ff5656;
-}
-
-.Time h3 {
-    border-bottom: 2px solid #4141f7;
-    line-height: 80px;
-    height: 80px;
-    margin: 0;
-    background: #127fd3;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-size: 120%;
-    color: white;
-    text-align: center;
-}
-
-.seconds h3 {
-    background: #fa0101e0;
-    border: red;
-}
-
-.Time h4 {
-    width: 100%;
-    margin: 0;
-    font-size: 500%;
-    color: wheat;
-    line-height: 170px;
-    background: #2196f3;
-    text-align: center;
-}
-
-@media(max-width: 500px){
-    .Hours{
-        margin: 0px !important;
-    }
-    .col-sm-push-4 {
-        left: 16.5% !important;
-    }
-    .dym{
-        margin-top: 38% !important;
-    }
-    .Time{
-        margin: 0;
-    }
-    .Time h3{
-        font-size: 124% !important;
-        height: 45px !important;
-        line-height: 45px !important;
-    }
-    .Time h4{
-        font-size: 75px !important;
-    }
-}
-@media(min-width: 1250px){
-    .Time h3{
-        font-size: 200%;
-    }
-    .Time h4{
-        font-size: 150px;
-    }
-    .col-sm-push-4{
-        left: 36.5% !important; 
-     }
-    .dym{
-        margin-top: 10% !important;
-    }
-}
-@media(min-width: 1000px){
-    .Time h3{
-        font-size: 200%;
-    }
-    .Time h4{
-        font-size: 150px;
-    }
-    .col-sm-push-4{
-        left: 35%; 
-     }
-}
-@media(max-width: 1000px){
-    .dmy{
-        margin-top: 25%;
-    }
-    .col-sm-push-4{
-        left: 34.5%; 
-    }
-    .Hours, .Minutes, .seconds{
-        height: 178px;
-    }
-    .Hours{
-        margin-left: 0;
-        margin-left: 12.5%;
-    }
-    .Time h3{
-        font-size: 150%;
-        height: 56px;
-        line-height: 56px;
-    }
-    .Time h4{
-        font-size: 90px;
-        height: 120px;
-        line-height: 120px;
-    }
-    .dmy h1{
-        padding-left: 0px;
-    }
-    .col-sm-push-4{
-       left: 34.5%; 
+@media(max-width : 450px){
+    .Clock h4{
+        font-size: 120px;
     }
 }
 /* end clock */
-div#hien {
+div #hien {
     display: none;
     margin-top: 15%;
     text-align: -webkit-center;

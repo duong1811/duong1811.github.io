@@ -11,16 +11,22 @@
 	 <link rel="shortcut icon" type="image/png" href="image/logo1.png">
 </head>
 <body >
-	<div class="Time container">
+	<div class="Time container" id="Time">
 		<div class="row" id="row">
-			<div class="dmy col-lg-9 col-sm-9 col-md-9 col-xs-10">
-				<h1 id="day" class="col-lg-1 col-sm-push-4">00</h1>
-				<h1 id="month" class="col-lg-1 col-sm-push-4">00</h1>
-				<h1 id="year" class="col-lg-1 col-sm-push-4">00</h1>
+			<div class="dmy">
+				<h1 id="day">00</h1>
+				<h1>/</h1>
+				<h1 id="month">00</h1>
+				<h1>/</h1>
+				<h1 id="year">00</h1>
 			</div>
-			<div class="Hours col-lg-3 col-sm-3 col-xs-4"><h3>Hours</h3><h4 id="Hours">00</h4></div>
-			<div class="Minutes col-lg-3 col-sm-3 col-xs-4"><h3>Minutes</h3><h4 id="Minutes">00</h4></div>
-			<div class="seconds col-lg-3 col-sm-3 col-xs-4"><h3>Seconds</h3><h4 id="Seconds">00</h4></div>
+		</div>
+		<div class="Clock">
+			<h4 id="Hours">00</h4>
+			<h4>:</h4>
+			<h4 id="Minutes">00</h4>
+			<h4>:</h4>
+			<h4 id="Seconds">00</h4>
 		</div>
 		<div class="col-xs-6 col-sm-push-3" id="hien">
 			<img src="" id="image" alt="" class="img-responsive">
@@ -82,7 +88,9 @@
         seconds.innerHTML = s;
         day.innerHTML = d;
         month.innerHTML = mo;
-        year.innerHTML = y;  
+		year.innerHTML = y;
+		var top = document.getElementById('Time');
+        top.style.marginTop = innerHeight /2.7 + 'px';  
     }
         setInterval(clock, 1000);
 	</script>
